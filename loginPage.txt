@@ -1,0 +1,22 @@
+<!Doctype html>
+
+<html lang="en">
+  <head>
+    <title>Cab Hiring</title>
+  </head>
+  
+  <body>
+    <h1>
+      Account Login
+    </h1>
+    
+    
+    <input name="loginUsername" id="loginUsernameID" type="text" required />
+    
+    <input name="password" id="passwordID" type="password" required />
+    
+    <input name="loginSubmitButton" id="passwordID" type="button" />
+    
+  </body>
+  
+</html>
