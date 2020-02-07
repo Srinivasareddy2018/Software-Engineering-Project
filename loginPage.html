@@ -4,6 +4,7 @@
   <head>
     <!-- Title -->
     <title>Cab Hiring</title>
+    <script src="js/loginPage.js"></script>
   </head>
   
   <body>
@@ -13,19 +14,18 @@
     </h1>
     
 
-    <form>
-
+    <form method="POST">
     <!-- Login Input -->
-    <label for="loginUsernameID"><input name="loginUsername" id="loginUsernameID" placeholder="Email" type="text" required > </label> <br>
+    <label for="loginUsernameID"><input name="loginUsername" id="loginUsernameID" placeholder="Email" type="text" onchange="checkUsername()" autofocus required > </label> <br>
     
     <!-- Password -->
-    <label for="passwordID"><input name="password" id="passwordID" placeholder="Password" type="password" required > </label> <br>
+    <label for="passwordID"><input name="password" id="passwordID" placeholder="Password" type="password" onchange="checkPassword()" required > </label> <br>
     
     <!-- Submit Button -->
-    <button name="loginSubmitButton" title="LOGIN"  id="loginSubmitButton" type="submit"> LOGIN </button> <br>
+    <button name="loginSubmitButton" onclick="checkUsername" title="LOGIN"  id="loginSubmitButton" type="submit"> LOGIN </button> <br>
 
     </form>
-  
+    
     <!-- TODO: Add href link here for both Forgot Username and Create Account -->
     <!-- Link to User forgot his password/username and Create Account -->
     <p>Forgot Username or Password <a href="" aria-label="forgot password"> Username/Password </a> </p>
