@@ -1,0 +1,71 @@
+<!Doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Title -->
+    <title>Cab Hiring SignUp</title>
+    <script src="js/signUpPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/SignUpPage.css">
+  </head>
+  
+
+  <body>
+
+    <div id="login-box">
+      <div class="left">
+    <h1>
+      <!-- Heading -->
+      Account SignUp
+    </h1>
+
+
+    <!-- Warning Message When Username doesn't match with regular expression -->
+    <p id="warningMessage" display="none" ></p>
+    
+
+    <!-- FIXME: Check all onchange attributes labels and button -->
+    <form method="POST" action="php/SignUpPage.php">
+    <!-- SignUp Username Input -->
+    <label for="signUpUsernameID"><input name="signUpUsername" id="signUpUsernameID" placeholder="Username" type="text" onchange="checkUsername()" autofocus required > </label> <br>
+    
+    <!-- Email Input -->
+    <label for="emailID"><input name="email" id="emailID" placeholder="Email" type="text" onchange="checkEmail()" autofocus required > </label> <br>
+    
+    <!-- Password -->
+    <label for="passwordID"><input name="password" id="passwordID" placeholder="Password" type="password" onchange="checkPassword()" required autofocus> </label> <br>
+    
+    <!-- Conform Password -->
+    <label for="confirmPassword"><input name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" type="password" onchange="checkTwoPasswords()" autofocus required > </label> <br>
+
+    <!-- Submit Button -->
+    <button name="signUpSubmit"  title="SignUp"  id="signUpSubmitButton" type="submit"> SignUp </button> <br>
+
+    </form>
+
+    </div>
+
+
+    <div class="right">
+      <span class="loginwith">Sign in with<br />social network</span>
+      
+      <button class="social-signin facebook">Log in with facebook</button>
+      <button class="social-signin twitter">Log in with Twitter</button>
+      <button class="social-signin google">Log in with Google+</button>
+    </div>
+
+
+    <div class="or">OR</div>
+
+  </div>
+
+  <!-- TODO: Add href link here for both Forgot Username and Create Account -->
+    <!-- Link to User forgot his password/username and Create Account -->
+    <p>Forgot<a href="" aria-label="forgot password"> Username/Password </a> </p>
+
+    <p>Already a member? <a href="" aria-label="Login">Login Now</a> </p>
+    
+   
+    
+  </body>
+  
+</html>

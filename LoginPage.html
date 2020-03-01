@@ -1,0 +1,54 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Cab Hiring Login</title>
+    <script src="js/LoginPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/loginPage.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <div class="form">
+
+            <h1>
+                <!-- Heading -->
+                Account Login
+            </h1>
+
+
+            <!-- Warning Message When Username doesn't match with regular expression -->
+            <p id="warningMessage" display="none"></p>
+
+
+            <!-- FIXME: Check all onchange attributes labels and button -->
+            <form method="POST" class="login-form" action="php/LoginPage.php">
+                <!-- Login Input -->
+                <label for="loginUsernameID"><input name="loginUsername" id="loginUsernameID" placeholder="Email" type="text"
+            onchange="checkUsername()" autofocus required> </label> <br>
+
+                <!-- Password -->
+                <label for="passwordID"><input name="password" id="passwordID" placeholder="Password" type="password"
+            onchange="checkPassword()" required> </label> <br>
+
+                <!-- Submit Button -->
+                <button name="loginSubmitButton" title="LOGIN" id="loginSubmitButton" type="submit"> LOGIN </button> <br>
+
+            </form>
+
+            <!-- TODO: Add href link here for both Forgot Username and Create Account -->
+            <!-- Link to User forgot his password/username and Create Account -->
+            <p class="message">Forgot<a href="" aria-label="forgot password"> Password </a> </p>
+
+            <p class="message">Not registered? <a href="SignUpPage.html" aria-label="Create accout">Create an account </a>
+            </p>
+
+            <p class="message"> <a href="php/AdminLoginPage.php" aria-label="Admin Login">Admin Login</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
